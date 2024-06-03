@@ -1,7 +1,7 @@
 
 ## Sales Forecasting
 
-[Link to Notebook]()
+[Link to Notebook](https://github.com/vytla/capstone-part1/blob/main/sales-forecasting-1.ipynb)
 
 ### Executive summary
 
@@ -141,6 +141,7 @@ After normalizing the dataset using get_dummies, the next step involves scaling 
     -  Best_model:  Pipeline(steps=[('scaler', StandardScaler()), ('ridge', Ridge(alpha=1000.0))])
 
 - Feature Importance based on GridSearchCV
+
     <img src="images/feature.png" width="350" height="200">
 
 - Create graph using rolling window of size 2 mean and standard deviation
@@ -148,6 +149,7 @@ After normalizing the dataset using get_dummies, the next step involves scaling 
     <img src="images/mean_std.png" width="350" height="200">
 
 - Check dataset is stationary using decompose. 
+
     <img src="images/decompose.png" width="350" height="200">
     
     - From above graph we can confirm datset is following trend and also seasonal
@@ -155,7 +157,9 @@ After normalizing the dataset using get_dummies, the next step involves scaling 
 - Made datset stationary using diff method
 
 - Created final model AUTO ARIMA to prections and forecast
+
     <img src="images/prediction.png" width="450" height="150">
+    
 - Identified Best Model parms with ARIMA model 
     - Best model:  ARIMA(3,0,2)(0,0,0)[1] intercept
     & Total fit time: 1.009 seconds
